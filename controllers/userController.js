@@ -20,7 +20,7 @@ const login = async (req, res) => {
         .status(200)
         .send({ message: `Password doesn't match`, success: false });
     } else {
-      const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
+      const token = jwt.sign({ id: user._id },"Riya", {
         expiresIn: "1d",
       });
 

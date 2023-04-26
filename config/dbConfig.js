@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect(process.env.DATABASE_URL)
+  .connect("mongodb+srv://Surya:Captain9170@cluster0.dt1waul.mongodb.net/test")
   .then(() => {
     console.log("💿 Database connected ");
   })
